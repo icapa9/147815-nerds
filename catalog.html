@@ -25,10 +25,65 @@
       <h1>Магазин готовых шаблонов</h1>
     </header>
     <main class="container">
-      <section class="filters">
+      <section class="filter">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
+        <form class="filter-layout" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>стоимость:</legend>
+            <label class="visually-hidden" for="range">стоимость</label>
+            <input type="range" min="0" max="50000" step="0" value="15000" id="range">
+            <label for="range-min">от</label>
+            <input type="number" value="0" id="range-min">
+            <label for="range-max">до</label>
+            <input type="number" value="15000" id="range-max">
+          </fieldset>
+          <fieldset>
+            <legend>сетка:</legend>
+            <ul>
+              <li class="filter-option">
+                <input type="radio" name="filter-group" value="adaptive" id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+                <input type="radio" name="filter-group" value="fix" id="filter-fix">
+                <label for="filter-fix">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                <input type="radio" name="filter-group" value="rubber" id="filter-rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>особенности:</legend>
+            <ul>
+              <li class="filter-option">
+                <input type="checkbox" name="slider" id="filter-slider" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" name="features-block" id="filter-features">
+                <label for="filter-features">Блок преимуществ</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" name="news" id="filter-news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" name="gallery" id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" name="cart" id="filter-cart">
+                <label for="filter-cart">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button" type="submit">показать</button>
+        </form>
       </section>
       <section class="filter-sort">
+        <h2 class="visually-hidden">Сортировать</h2>
         <span>Сортировать:</span>
         <ul>
           <li class="active"><a href="#">по цене</a></li>
@@ -54,6 +109,7 @@
           <div class="hover-block">
             <span>sedona</span>
             <p>Информационный сайт для туристов</p>
+            <a class="button" href="#">9900 руб.</a>
           </div>
         </div>
         <div class="catalog-item">
@@ -66,6 +122,7 @@
           <div class="hover-block">
             <span>pink app</span>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
+            <a class="button" href="#">9900 руб.</a>
           </div>
         </div>
         <div class="catalog-item">
@@ -78,6 +135,7 @@
           <div class="hover-block">
             <span>barbershop</span>
             <p>Сайт салоны красоты. Для мужчин, да.</p>
+            <a class="button" href="#">9900 руб.</a>
           </div>
         </div>
         <div class="catalog-item">
@@ -90,6 +148,7 @@
           <div class="hover-block">
             <span>mishka</span>
             <p>Интернет-магазин вязаных игрушек</p>
+            <a class="button" href="#">9900 руб.</a>
           </div>
         </div>
         <div class="catalog-item">
@@ -102,6 +161,7 @@
           <div class="hover-block">
             <span>a plus</span>
             <p>Интернет-магазин вязаных игрушек</p>
+            <a class="button" href="#">9900 руб.</a>
           </div>
         </div>
         <div class="catalog-item">
@@ -114,6 +174,7 @@
           <div class="hover-block">
             <span>кваст</span>
             <p>Промо-сайт производителя крафтового кваса</p>
+            <a class="button" href="#">9900 руб.</a>
           </div>
         </div>
         <div class="pagination">
@@ -135,7 +196,7 @@
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <span>тел.</span>
           <a href="tel:+7(812)2757575">+7(812)275-75-75</a>
-          <a class="button" href="#">напишите нам</a>
+          <button class="button" type="button">напишите нам</button>
         </div>
       </section>
     </main>
