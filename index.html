@@ -9,49 +9,51 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="#">
-          <img src="img\nerds-logo.png" width="160" height="65" alt="Логотип студии Нёрдс">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="#">студия</a></li>
-          <li><a href="clients.html">клиенты</a></li>
-          <li><a href="catalog.html">магазин</a></li>
-          <li><a href="contacts.html">контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li class="cart">
-            <a class="cart" href="#">корзина</a>
-          </li>
-        </ul>
-      </nav>
-      <section class="slider">
-        <h2 class="visually-hidden">Слайдер</h2>
-        <div class="slide-item">
-          <b>Долго, дорого, скрупулезно.</b>
-          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-          <a class="button" href="#">узнать больше</a>
-        </div>
-        <div class="slide-item">
-          <b>Любим математику как никто другой</b>
-          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-          <a class="button" href="#">узнать больше</a>
-        </div>
-        <div class="slide-item">
-          <b>Только ночь, только хардкор</b>
-          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a class="button" href="#">узнать больше</a>
-        </div>
-        <ul class="slider-indicator">
-          <li><button type="button">переключение слайда</button></li>
-          <li><button type="button">переключение слайда</button></li>
-          <li><button type="button">переключение слайда</button></li>
-        </ul>
-      </section>
+      <div class="header-wrap container">
+        <nav class="main-navigation">
+          <a class="main-header-logo" href="#">
+            <img src="img\nerds-logo.png" width="160" height="65" alt="Логотип студии Нёрдс">
+          </a>
+          <ul class="site-navigation">
+            <li><a href="#">студия</a></li>
+            <li><a href="clients.html">клиенты</a></li>
+            <li><a href="catalog.html">магазин</a></li>
+            <li><a href="contacts.html">контакты</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li class="cart">
+              <a class="cart" href="#">корзина</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="slider">
+          <h2 class="visually-hidden">Слайдер</h2>
+          <div class="slide-item">
+            <b>Долго, дорого, скрупулезно.</b>
+            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+            <a class="button" href="#">узнать больше</a>
+          </div>
+          <div class="slide-item">
+            <b>Любим математику как никто другой</b>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="button" href="#">узнать больше</a>
+          </div>
+          <div class="slide-item">
+            <b>Только ночь, только хардкор</b>
+            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a class="button" href="#">узнать больше</a>
+          </div>
+          <ul class="slider-indicator">
+            <li><button type="button">переключение слайда</button></li>
+            <li><button type="button">переключение слайда</button></li>
+            <li><button type="button">переключение слайда</button></li>
+          </ul>
+        </section>
+      </div>
     </header>
-    <main class="container">
+    <main>
       <h1 class="visually-hidden">Нёрдс дизайн-студия из Краснодара</h1>
-      <section class="advantages">
+      <section class="advantages container">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li>
@@ -80,7 +82,7 @@
           </li>
         </ul>
       </section>
-      <section class="about-us">
+      <section class="about-us container">
         <h2 class="visually-hidden">О нас</h2>
         <div class="about-us-features">
           <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
@@ -109,7 +111,7 @@
           </table>
         </div>
       </section>
-      <section class="portfolio">
+      <section class="portfolio container">
         <h2 class="visually-hidden">Наши работы</h2>
         <ul class="portfolio-list">
           <li>
@@ -140,7 +142,7 @@
         </div>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="#">Вконтакте</a></li>
@@ -148,8 +150,10 @@
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
       </div>
-      <b>Давайте дружить, это выгодно!</b>
-      <p>Скидка 10% для друзей из социальных сетей</p>
+      <div class="footer-social-wrap">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </footer>
     <section class="modal">
       <h2>Напишите нам</h2>
